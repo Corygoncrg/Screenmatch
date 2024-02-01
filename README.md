@@ -1,5 +1,5 @@
-Projeto Screenmatch do curso Alura
-Um programa que pesquisa filmes 
+#Projeto Screenmatch do curso Alura
+##Um programa que pesquisa filmes 
 Esse projeto é um exercício que foi feito junto com 
 *Nota de que o programa está escrito em inglês.
 

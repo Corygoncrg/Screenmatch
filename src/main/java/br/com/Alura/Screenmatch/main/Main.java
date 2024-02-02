@@ -35,12 +35,7 @@ public class Main {
             seasons.add(seasonData);
         }
         seasons.forEach(System.out::println);
-//                for (int i = 0; i < data.totalSeasons(); i++){
-//                    List<EpisodeData> episodeSeason = seasons.get(i).episodes();
-//                    for (int j = 0; j < episodeSeason.size(); j++){
-//                        System.out.println(episodeSeason.get(j).title());
-//                    }
-//                    seasons.forEach(s -> s.episodes().forEach(e -> System.out.println(e.title())));
+
         List<EpisodeData> episodeData = seasons.stream()
                 .flatMap(s -> s.episodes().stream())
                 .collect(Collectors.toList());
@@ -89,17 +84,21 @@ public class Main {
 //                                " Episode: " + e.getEpisode() + " Title: " + e.getTitle() +
 //                                " Released Date: " + e.getReleased().format(dF)
 //                ));
+
 Map<Integer, Double> averagePerSeason = episodes.stream()
         .filter(e -> e.getRating() > 0.0)
         .collect(Collectors.groupingBy(Episode::getSeason,
                 Collectors.averagingDouble(Episode::getRating)));
         System.out.println(averagePerSeason);
+
         DoubleSummaryStatistics est = episodes.stream()
                 .filter(e -> e.getRating() > 0.0)
                 .collect(Collectors.summarizingDouble(Episode::getRating));
+
         System.out.println("Average: " + est.getAverage());
         System.out.println("Best Episode: " + est.getMax());
         System.out.println("Episodes Rated: " + est.getCount());
+
                 }
     }
 

@@ -8,7 +8,6 @@ import br.com.Alura.Screenmatch.service.ConsumeApi;
 import br.com.Alura.Screenmatch.service.ConvertData;
 import br.com.Alura.Screenmatch.model.SeriesData;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -16,8 +15,8 @@ import java.util.stream.Collectors;
 
 public class Main {
     Scanner input  = new Scanner(System.in);
-    private final String ADDRESS = "http://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=b9b5453b";
+    private static final String ADDRESS = "http://www.omdbapi.com/?t=";
+    private static final String API_KEY = "&apikey=b9b5453b";
     ConsumeApi consume = new ConsumeApi();
     ConvertData converter = new ConvertData();
     public void showMenu() {

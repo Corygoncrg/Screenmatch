@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class Main {
     Scanner input  = new Scanner(System.in);
     private final String ADDRESS = "http://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=";
+    private final String API_KEY = "&apikey=suaApiKey";
     ConsumeApi consume = new ConsumeApi();
     ConvertData converter = new ConvertData();
     public void showMenu() {

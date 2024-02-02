@@ -9,7 +9,7 @@ Esse projeto foi feito ao decorrer da formação: Aprenda a programar em Java co
 2. Execute o projeto em seu software de desenvolvimento de preferência
 3. Insira a sua api key na public class Main:
 
-   ![image](https://github.com/Corygoncrg/Screenmatch/assets/147842564/0e869528-3892-44e2-a93e-2082f862c7ca)
+   ![image](https://github.com/Corygoncrg/Screenmatch/assets/147842564/6aa31094-1a67-4602-935d-3269dd4150b8)
 
 4. Execute o programa
 
